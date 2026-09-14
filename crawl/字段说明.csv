@@ -1,0 +1,36 @@
+﻿字段名,类型,作用,来源
+notice_title,str,公告标题,详情页 h2.tc
+notice_type,str,公告类型（中标公告/成交公告/公开招标公告等 10+ 种）,URL 目录判定，标题辅助识别
+project_code,str,项目编号，公告关联与跨源去重的主键,正文正则（兼容项目编号/招标编号/采购编号等称谓）
+publish_time,str,官网发布时间,页面 span#pubTime
+notice_url,str,公告详情页地址（已规范化，去除 /./ 片段）,列表页传入
+source,str,数据来源平台名，多源采集后区分数据归属,URL 域名映射
+crawl_time,str,本条数据的抓取时间，排查数据新鲜度,系统时间
+industry,str,行业归类（医疗卫生/信息技术/公共安全等 13 类，最多含关联判定），支撑“行业”筛选维度,标题优先 + 正文前 600 字的关键词规则
+admin_region,str,行政区域（省/市），支撑“地区”筛选,页面信息表格
+budget,float,预算金额（万元），支撑“金额区间”筛选,表格优先，正文回退，可疑值容错
+budget_source,str,预算取值来源（table/content/table_suspicious/default），标注数据可信度,提取过程记录
+bid_deadline,str,投标/响应文件递交截止时间（YYYY-MM-DD HH:MM），商机探查核心——“还来不来得及参与”,正文正则
+open_bid_time,str,开标时间，仅招标类公告有,表格 + 正文回退
+purchase_method,str,采购方式（公开招标/竞争性磋商/单一来源采购等）,正文正则；单一来源固定赋值
+content_text,str,公告正文全文，ES 全文检索与关键词搜索的数据基础,正文区 text 提取
+buyer_name,str,采购单位名称，供应商画像/客户挖掘的实体,页面信息表格
+buyer_address,str,采购单位地址,页面信息表格
+buyer_contact,str,采购单位联系方式,页面信息表格
+agent_name,str,代理机构名称，代理机构画像的实体,页面信息表格
+agent_address,str,代理机构地址,页面信息表格
+agent_contact,str,代理机构联系方式,页面信息表格
+contact_name,str,项目联系人姓名（全类型通用，只取中文避免混入电话）,正文正则，表格优先
+contact_tel,str,项目联系电话,正文正则，兼容“电 话”等空格变体
+win_supplier,str,中标/成交供应商名称（多分包逗号分隔），供应商画像的核心实体,正文表格明细 + 正则兜底
+win_total_amount,float,中标/成交总金额（万元），金额维度筛选,表格 + 正文 + 分包求和三级兜底
+win_detail_json,str,分包中标明细 JSON（每包的供应商、金额等表头原样字段），支撑多供应商分析,正文表格结构化提取
+judge_experts,str,评审专家名单,页面信息表格
+agent_service_fee,float,代理服务费金额（万元）,正文正则
+change_item,str,更正事项，变更公告专属,表格 + 正文回退
+terminate_reason,str,废标/流标/终止原因，失败案例分析用,正文正则（多关键词容错）
+proposed_supplier,str,拟定供应商，单一来源公示专属,正文正则（兼容“拟由X提供”散文体）
+single_source_reason,str,采用单一来源的理由说明,正文正则
+publicity_period,str,公示期限（含“征求意见期限从A至B”格式）,正文正则
+attach_file_names,str,附件文件名（逗号分隔），靠文件名可识别招标文件/评分标准,a.bizDownload
+attach_json,str,"附件数组 JSON（[{attach_name, attach_url}]），URL 为 OSS 直链，长期有效、不依赖公告页存活",附件 @id 构造 UUID 下载链

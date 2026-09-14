@@ -1,0 +1,121 @@
+{
+  "start_time": "2026-09-11 09:32:27",
+  "total_records": 48291,
+  "per_source": {
+    "1": 25393,
+    "2": 1089,
+    "3": 21809,
+    "4": 0,
+    "5": 0,
+    "6": 0
+  },
+  "per_classify": {
+    "01": 5711,
+    "02": 33447,
+    "03": 533,
+    "04": 17,
+    "05": 4188,
+    "21": 4,
+    "22": 19,
+    "23": 0,
+    "24": 0,
+    "25": 14,
+    "90": 4358
+  },
+  "per_day": {
+    "2026-09-08": 47983,
+    "2026-09-09": 0,
+    "2026-09-10": 308
+  },
+  "current": {
+    "source": "6",
+    "source_name": "商务部",
+    "classify": "90",
+    "classify_name": "其他",
+    "day": "2026-09-10"
+  },
+  "incomplete": [
+    {
+      "date": "2026-09-08",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "内蒙古",
+      "stage": "0203",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-08",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "浙江",
+      "stage": "0201",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-08",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "广东",
+      "stage": "0203",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-09",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "内蒙古",
+      "stage": "0203",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-09",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "浙江",
+      "stage": "0201",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-09",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "广东",
+      "stage": "0203",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-10",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "内蒙古",
+      "stage": "0203",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-10",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "浙江",
+      "stage": "0201",
+      "total": 1000
+    },
+    {
+      "date": "2026-09-10",
+      "source": "3",
+      "classify": "02",
+      "reason": "no_city_map",
+      "province": "广东",
+      "stage": "0203",
+      "total": 1000
+    }
+  ],
+  "updated_at": "2026-09-11 11:52:43"
+}

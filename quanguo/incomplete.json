@@ -1,0 +1,83 @@
+[
+  {
+    "date": "2026-09-08",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "内蒙古",
+    "stage": "0203",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-08",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "浙江",
+    "stage": "0201",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-08",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "广东",
+    "stage": "0203",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-09",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "内蒙古",
+    "stage": "0203",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-09",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "浙江",
+    "stage": "0201",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-09",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "广东",
+    "stage": "0203",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-10",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "内蒙古",
+    "stage": "0203",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-10",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "浙江",
+    "stage": "0201",
+    "total": 1000
+  },
+  {
+    "date": "2026-09-10",
+    "source": "3",
+    "classify": "02",
+    "reason": "no_city_map",
+    "province": "广东",
+    "stage": "0203",
+    "total": 1000
+  }
+]
